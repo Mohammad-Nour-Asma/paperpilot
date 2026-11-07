@@ -136,7 +136,7 @@ uv run python -c "from agent import Agent; print(Agent()._run_tool('get_paper', 
 **Done when:** You get an answer with 3 real papers and their arXiv ids.
 **Commit:** `git commit -am "T11: agent loop with tools"`
 
-### [ ] T12. Test many tools in one request (20 min)
+### [x] T12. Test many tools in one request (20 min)
 **Do:** No new code. Only test.
 **Test:** Type `Find a paper about reranking, read its abstract, and save a note with its main idea.`
 **Done when:** `notes.md` contains a new note. If it does not work, find out why and fix it.
