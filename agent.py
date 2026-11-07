@@ -24,7 +24,7 @@ class Agent:
 
         # 2. Send the whole history to the local LLM (Ollama)
         message, usage = chat(self.messages)
-        print(f"[tokens] {usage}")
+        print(f"[tokens] {usage.total_tokens}")
 
         # 3. Add the model's reply to the history so it remembers it next turn
         self.messages.append(message.model_dump(exclude_none=True))

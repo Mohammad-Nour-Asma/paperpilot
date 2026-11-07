@@ -73,7 +73,7 @@ uv run python -c "from tools import search_arxiv; print(search_arxiv('RAG evalua
 
 ## Phase 3: The first LLM call (TODO 1)
 
-### [ ] T7. Make the LLM reply with text (30 min)
+### [x] T7. Make the LLM reply with text (30 min)
 **Do:** In `agent.py`, in `run()`:
 1. Add the user message to `self.messages` (a dict with `role` = `"user"` and `content`).
 2. Call `chat(self.messages)`. Do NOT send tools yet. You get `message, usage`.
