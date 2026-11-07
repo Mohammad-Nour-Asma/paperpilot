@@ -23,11 +23,38 @@ class Agent:
         self.messages.append({"role": "user", "content": prompt})
 
         # 2. Send the whole history to the local LLM (Ollama)
-        message, usage = chat(self.messages)
+        message, usage = chat(self.messages, tools=TOOL_SCHEMAS)
         print(f"[tokens] {usage.total_tokens}")
+        print(f"[tool_calls] {message.tool_calls}")
 
         # 3. Add the model's reply to the history so it remembers it next turn
         self.messages.append(message.model_dump(exclude_none=True))
 
         # 4. Return the answer text
         return message.content or ""
+
+    def _run_tool(self, name: str, arguments_json: str) -> str:
+        """Call a tool and return its result."""
+        # 1. Get the function from the TOOLS dict in tools.py
+        tool_function = TOOLS.get(name)
+        if tool_function is None:
+            return f"ERROR: unknown tool '{name}'. Available tools: {list(TOOLS)}"
+
+        # 2. Turn the JSON string from the LLM into a dict of arguments
+        try:
+            arguments = json.loads(arguments_json or "{}")
+        except json.JSONDecodeError as e:
+            return f"ERROR: the arguments are not valid JSON ({e})"
+
+        # 3. Call the function with those arguments
+        try:
+            result = tool_function(**arguments)
+        except Exception as e:
+            return f"ERROR: {name} failed: {type(e).__name__}: {e}"
+
+        # 4. Return the result as a string (the LLM only reads text)
+        return (
+            result
+            if isinstance(result, str)
+            else json.dumps(result, ensure_ascii=False)
+        )

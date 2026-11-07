@@ -89,7 +89,7 @@ Remove the line `raise NotImplementedError("Write the agent loop")`.
 **Done when:** The second answer says "Nour". This proves that the history works.
 **Commit:** `git commit -am "T7: first LLM call with history"`
 
-### [ ] T8. Print the token count (15 min)
+### [x] T8. Print the token count (15 min)
 **Do:** After the `chat()` call, print `usage.total_tokens`.
 **Test:** Send 3 messages. Look at the numbers.
 **Done when:** You see the number get larger with each message. Write in NOTES.md **why** it gets larger. (Hint: what do you send each time?)
@@ -99,7 +99,7 @@ Remove the line `raise NotImplementedError("Write the agent loop")`.
 
 ## Phase 4: Tools (TODOs 2 and 4)
 
-### [ ] T9. See a tool call, but do not run it (30 min)
+### [x] T9. See a tool call, but do not run it (30 min)
 **Do:**
 1. Change the call to `chat(self.messages, TOOL_SCHEMAS)`.
 2. After the call, print `message.tool_calls`.
@@ -110,7 +110,7 @@ Remove the line `raise NotImplementedError("Write the agent loop")`.
 
 > The program can fail after the print, because the LLM expects a tool result. That is normal at this step.
 
-### [ ] T10. Write `_run_tool()` for the normal case (30 min)
+### [x] T10. Write `_run_tool()` for the normal case (30 min)
 **Do:** In `_run_tool(name, arguments_json)`:
 1. Get the function from `TOOLS` with the name.
 2. Change `arguments_json` from a string to a dict with `json.loads()`.
@@ -145,7 +145,7 @@ uv run python -c "from agent import Agent; print(Agent()._run_tool('get_paper', 
 
 ## Phase 5: Safety (TODOs 3 and 4)
 
-### [ ] T13. Handle tool errors (30 min)
+### [x] T13. Handle tool errors (30 min)
 **Do:** In `_run_tool()`, use `try / except`. Never let an error escape. Return a string that starts with `ERROR:` for these 3 cases:
 1. The tool name is not in `TOOLS`.
 2. `json.loads()` fails (bad JSON).

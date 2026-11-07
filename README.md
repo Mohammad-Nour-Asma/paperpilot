@@ -2,7 +2,7 @@
 
 **Time:** week 1, about 20 hours · **Framework:** none · **AI coding assistant:** permitted for all files except `agent.py` (see rule below)
 
-> **AI rule for `agent.py` (about 80 lines):** Write the code yourself. You can ask an AI chat to explain a concept or an API. Do not let the AI write or autocomplete code in this file. For all other files, use AI tools as usual.
+> **AI rule:** You can use AI to generate code. You design it, you review it, and you must explain each line. At the end of the stage, do one 30-minute drill: rebuild `agent.py` from a blank file without AI (interview practice).
 
 > Writing rule: ASD-STE100. Short sentences. Imperative instructions.
 
