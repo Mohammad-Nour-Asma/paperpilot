@@ -33,7 +33,7 @@ uv run python -c "import openai, dotenv; print('ok')"
 ```
 **Done when:** You see `ok`.
 
-### [ ] T3. Make a Git repository (10 min)
+### [x] T3. Make a Git repository (10 min)
 **Do:**
 ```bash
 git init
