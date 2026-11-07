@@ -124,7 +124,7 @@ uv run python -c "from agent import Agent; print(Agent()._run_tool('get_paper', 
 **Done when:** You see the title "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks".
 **Commit.**
 
-### [ ] T11. Write the agent loop (60–90 min) ⭐ the most important task
+### [x] T11. Write the agent loop (60–90 min) ⭐ the most important task
 **Do:** Follow TODO 2 in `agent.py`:
 1. Put the LLM call in a `for step in range(MAX_STEPS):` loop.
 2. Add the assistant message to the history.
