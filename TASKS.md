@@ -175,7 +175,7 @@ Then in the chat, type `Get paper 9999.99999.`
 **Done when:** You can see each step of the agent in the Terminal.
 **Commit.**
 
-### [ ] T16. Run the full test (30 min)
+### [x] T16. Run the full test (30 min)
 **Do:** Restart the program. Run the test conversation in Part B5 of [README.md](README.md). Paste all the output in NOTES.md. Fill in the time log.
 **Done when:** All 8 acceptance criteria in Part B4 of README.md are true.
 
