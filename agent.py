@@ -4,14 +4,16 @@ import json
 
 from llm import chat
 from tools import TOOLS, TOOL_SCHEMAS
+from datetime import date
 
 
-SYSTEM_PROMPT = """You are PaperPilot, a research assistant for AI papers on arXiv.
+SYSTEM_PROMPT = f"""You are PaperPilot, a research assistant for AI papers on arXiv.
+Today's date is {date.today().isoformat()}.
 Use the tools to find real papers. Do not invent papers, ids, or authors.
+Always use the get_paper tool to check a paper id. Do not decide by yourself if an id is valid.
 Always give the arXiv id when you mention a paper.
 If a tool returns an error, read it and try to fix the problem, or explain it to the user.
 Keep answers short and clear."""
-
 MAX_STEPS = 6
 
 

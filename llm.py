@@ -21,7 +21,9 @@ _client = OpenAI(
     api_key=os.getenv("LLM_API_KEY", "ollama"),  # Ollama ignores the key, but the SDK needs one.
 )
 
-_THINK_RE = re.compile(r"<think>.*?</think>", re.DOTALL)
+# Remove thinking text. Sometimes the opening <think> tag is missing,
+# so remove everything up to and including the last </think>.
+_THINK_RE = re.compile(r"^.*</think>", re.DOTALL)
 
 
 def chat(messages: list[dict], tools: list[dict] | None = None, temperature: float = 0.2):
