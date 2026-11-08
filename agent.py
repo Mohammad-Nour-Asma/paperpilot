@@ -39,6 +39,9 @@ class Agent:
                 tool_result = self._run_tool(
                     tool_call.function.name, tool_call.function.arguments
                 )
+                print(
+                    f"  [tool] {tool_call.function.name} {tool_call.function.arguments}"
+                )
                 self.messages.append(
                     {
                         "role": "tool",

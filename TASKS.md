@@ -159,7 +159,7 @@ Then in the chat, type `Get paper 9999.99999.`
 **Done when:** You see 3 `ERROR:` lines. The program does not crash. In the chat, the agent explains the error to the user.
 **Commit.**
 
-### [ ] T14. Add the step limit message (15 min)
+### [x] T14. Add the step limit message (15 min)
 **Do:** After the loop ends (TODO 3), return a clear message, for example: "I stopped because I reached the limit of 6 steps."
 **Test:** For this test only, change `MAX_STEPS` to `1`. Type `Find a paper about RAG and save a note.` Then change `MAX_STEPS` back to `6`.
 **Done when:** You see your limit message.
@@ -169,7 +169,7 @@ Then in the chat, type `Get paper 9999.99999.`
 
 ## Phase 6: Finish
 
-### [ ] T15. Add a trace (15 min)
+### [x] T15. Add a trace (15 min)
 **Do:** Before you run each tool, print the tool name and the arguments, for example:
 `  [tool] search_arxiv {"query": "RAG evaluation"}`
 **Done when:** You can see each step of the agent in the Terminal.
