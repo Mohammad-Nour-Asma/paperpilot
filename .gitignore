@@ -3,3 +3,4 @@
 __pycache__/
 notes.md
 .DS_Store
+data/

@@ -43,7 +43,7 @@ docker compose exec db psql -U paperpilot -c "CREATE EXTENSION IF NOT EXISTS vec
 ```
 **Done when:** You see the pgvector version.
 
-### [ ] T3. Download the embedding model (10 min)
+### [x] T3. Download the embedding model (10 min)
 ```bash
 ollama pull bge-m3
 ```
@@ -53,10 +53,10 @@ curl http://localhost:11434/v1/embeddings -d '{"model":"bge-m3","input":"hello"}
 ```
 **Done when:** You see a list of numbers.
 
-### [ ] T4. Add the new packages (10 min)
+### [x] T4. Add the new packages (10 min)
 Add to `requirements.txt`: `pymupdf`, `psycopg[binary]`, `pgvector`, `numpy`. Install them.
 Add `data/` to `.gitignore`.
-**Test:** `uv run python -c "import fitz, psycopg, pgvector, numpy; print('ok')"`
+**Test:** `uv run python -c "import pymupdf, psycopg, pgvector, numpy; print('ok')"`
 
 ---
 
@@ -104,7 +104,7 @@ Then add about 23 more papers. Use your Stage 1 agent to find them. Topics: rera
 ## Phase C: Indexing
 
 ### [ ] T7. Parse one PDF (45 min)
-**Design:** In `ingest.py`, a function `parse_pdf(path) -> list[dict]` that returns one dict for each page: `{"arxiv_id", "page", "text"}`. Use PyMuPDF (`fitz`). Pages start at 1.
+**Design:** In `ingest.py`, a function `parse_pdf(path) -> list[dict]` that returns one dict for each page: `{"arxiv_id", "page", "text"}`. Use PyMuPDF (`import pymupdf`, not the old name `fitz`). Pages start at 1.
 **Test:** Parse `2005.11401.pdf`. Print page 3.
 **Done when:** You can read the text. **Write in NOTES:** what is messy in the text? (Headers? Formulas? Hyphens at the end of lines?)
 
