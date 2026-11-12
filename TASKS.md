@@ -51,15 +51,15 @@ git commit -m "Stage 1: starter files"
 
 ## Phase 2: Learn
 
-### [ ] T4. Read the lesson (60 min)
+### [x] T4. Read the lesson (60 min)
 **Do:** Read Part A of [README.md](README.md). Look at each diagram.
 **Done when:** You can explain the agent loop diagram (A5) to yourself without the text.
 
-### [ ] T5. Answer the knowledge questions (30 min)
+### [x] T5. Answer the knowledge questions (30 min)
 **Do:** Write the answers to Part C in [NOTES.md](NOTES.md). Use your own words. Do not search.
 **Done when:** All 5 answers are written. It is OK if some are wrong. The mentor will correct them.
 
-### [ ] T6. Read the starter code (30 min)
+### [x] T6. Read the starter code (30 min)
 **Do:** Read `llm.py`, `tools.py`, and `main.py`. Then run a tool by itself:
 ```bash
 uv run python -c "from tools import search_arxiv; print(search_arxiv('RAG evaluation', 2))"
@@ -179,7 +179,7 @@ Then in the chat, type `Get paper 9999.99999.`
 **Do:** Restart the program. Run the test conversation in Part B5 of [README.md](README.md). Paste all the output in NOTES.md. Fill in the time log.
 **Done when:** All 8 acceptance criteria in Part B4 of README.md are true.
 
-### [ ] T17. Push to GitHub and send for review (20 min)
+### [x] T17. Push to GitHub and send for review (20 min)
 **Do:**
 1. Make a new public repository on GitHub with the name `paperpilot`.
 2. Push your code.
