@@ -1,0 +1,16 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    container_name: paperpilot-db
+    environment:
+      POSTGRES_USER: paperpilot
+      POSTGRES_PASSWORD: paperpilot
+      POSTGRES_DB: paperpilot
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  pgdata:
