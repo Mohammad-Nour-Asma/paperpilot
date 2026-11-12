@@ -1,0 +1,54 @@
+[
+  {"arxiv_id": "2005.11401", "topic": "rag"},
+  {"arxiv_id": "2007.01282", "topic": "rag"},
+  {"arxiv_id": "2310.11511", "topic": "rag"},
+  {"arxiv_id": "2401.15884", "topic": "rag"},
+  {"arxiv_id": "2401.18059", "topic": "rag"},
+  {"arxiv_id": "2404.16130", "topic": "rag"},
+  {"arxiv_id": "2312.10997", "topic": "survey"},
+  {"arxiv_id": "2307.03172", "topic": "long-context"},
+  {"arxiv_id": "2212.10496", "topic": "query-rewriting"},
+
+  {"arxiv_id": "2004.04906", "topic": "retrieval"},
+  {"arxiv_id": "2004.12832", "topic": "retrieval"},
+  {"arxiv_id": "2112.09118", "topic": "retrieval"},
+  {"arxiv_id": "2108.06279", "topic": "retrieval"},
+
+  {"arxiv_id": "2402.03216", "topic": "embeddings"},
+  {"arxiv_id": "2212.03533", "topic": "embeddings"},
+
+  {"arxiv_id": "1901.04085", "topic": "reranking"},
+  {"arxiv_id": "2003.06713", "topic": "reranking"},
+  {"arxiv_id": "2304.09542", "topic": "reranking"},
+  {"arxiv_id": "2312.02724", "topic": "reranking"},
+
+  {"arxiv_id": "2504.19754", "topic": "chunking"},
+  {"arxiv_id": "2312.06648", "topic": "chunking"},
+  {"arxiv_id": "2409.04701", "topic": "chunking"},
+
+  {"arxiv_id": "2107.05720", "topic": "hybrid-search"},
+  {"arxiv_id": "2210.05512", "topic": "hybrid-search"},
+  {"arxiv_id": "2503.23013", "topic": "hybrid-search"},
+
+  {"arxiv_id": "2104.08663", "topic": "evaluation"},
+  {"arxiv_id": "2309.15217", "topic": "evaluation"},
+  {"arxiv_id": "2311.09476", "topic": "evaluation"},
+  {"arxiv_id": "2309.01431", "topic": "evaluation"},
+  {"arxiv_id": "2408.08067", "topic": "evaluation"},
+  {"arxiv_id": "2401.15391", "topic": "evaluation"},
+  {"arxiv_id": "2306.05685", "topic": "evaluation"},
+  {"arxiv_id": "2509.12382", "topic": "evaluation"},
+
+  {"arxiv_id": "2210.03629", "topic": "agents"},
+  {"arxiv_id": "2302.04761", "topic": "agents"},
+  {"arxiv_id": "2303.11366", "topic": "agents"},
+
+  {"arxiv_id": "2310.08560", "topic": "agent-memory"},
+  {"arxiv_id": "2304.03442", "topic": "agent-memory"},
+  {"arxiv_id": "2502.12110", "topic": "agent-memory"},
+  {"arxiv_id": "2504.19413", "topic": "agent-memory"},
+
+  {"arxiv_id": "2402.05672", "topic": "multilingual"},
+  {"arxiv_id": "2210.09984", "topic": "multilingual"},
+  {"arxiv_id": "2007.01852", "topic": "multilingual"}
+]
