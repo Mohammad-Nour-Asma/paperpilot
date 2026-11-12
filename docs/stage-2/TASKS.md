@@ -26,7 +26,7 @@ uv pip install -r requirements.txt
 ```
 **Test:** `uv run python --version` shows 3.12. `uv run main.py` still works.
 
-### [ ] T2. Start PostgreSQL + pgvector in Docker (30 min)
+### [x] T2. Start PostgreSQL + pgvector in Docker (30 min)
 **Design:** `docker-compose.yml` with one service:
 - image `pgvector/pgvector:pg17`
 - port **5433** on your Mac → 5432 in the container (5433 prevents a conflict with another local PostgreSQL)
